@@ -1,0 +1,33 @@
+.sort-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0;
+  padding: 0 16px;
+}
+
+.sort-control label {
+  font-weight: 500;
+  color: var(--brand-dark-purple);
+}
+
+.sort-control select {
+  padding: 8px 12px;
+  border: 2px solid var(--brand-purple);
+  border-radius: 4px;
+  background-color: white;
+  color: var(--brand-dark-purple);
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.sort-control select:hover {
+  border-color: var(--brand-dark-purple);
+}
+
+.sort-control select:focus {
+  outline: none;
+  border-color: var(--brand-dark-purple);
+  box-shadow: 0 0 0 2px rgba(var(--brand-purple-rgb), 0.1);
+}

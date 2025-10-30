@@ -2,6 +2,8 @@ CREATE TABLE IF NOT EXISTS public.products (
   id uuid NOT NULL DEFAULT gen_random_uuid(),
   title text NOT NULL UNIQUE,
   color character varying NOT NULL,
+  size character varying NOT NULL,
+  price integer NOT NULL,
   CONSTRAINT products_pkey PRIMARY KEY (id)
 );
   

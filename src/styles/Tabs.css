@@ -1,0 +1,28 @@
+.tab-navigation {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--brand-purple);
+  padding: 0 16px;
+}
+
+.tab {
+  padding: 12px 24px;
+  background: white;
+  border: 2px solid var(--brand-purple);
+  border-bottom: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+  bottom: -2px;
+}
+
+.tab.active {
+  background: var(--brand-purple);
+  color: white;
+}
+
+.tab:hover:not(.active) {
+  background: #f0f0f0;
+}

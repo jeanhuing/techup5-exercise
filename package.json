@@ -7,7 +7,8 @@
     "build": "tsc && esbuild src/App.tsx --bundle --outfile=dist/bundle.js --loader:.tsx=tsx --loader:.ts=tsx --loader:.css=css",
     "build:watch": "concurrently \"tsc --watch\" \"esbuild src/App.tsx --bundle --outfile=dist/bundle.js --loader:.tsx=tsx --loader:.ts=tsx --loader:.css=css --watch\"",
     "start": "npm run build && concurrently \"npm run build:watch\" \"nodemon --config nodemon.json\" --kill-others --prefix name --names \"build,server\"",
-    "seed": "tsx scripts/seed-db.ts"
+    "seed": "tsx scripts/seed-db.ts",
+    "seed:products": "tsx scripts/seed-products.ts"
   },
   "dependencies": {
     "@types/cookie-parser": "^1.4.9",
